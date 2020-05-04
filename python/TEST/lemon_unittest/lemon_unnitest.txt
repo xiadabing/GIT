@@ -1,0 +1,17 @@
+1.只要单元测试，实例方法中有抛出异常，unittest框架都会是比为执行异常
+2.self.assertEqual(期望值，实际值，msg='错误信息的自定义提示')
+3.频繁的打开，关闭一个文件，将会有很大的资源消耗（cpu,内存）,
+
+
+1.setUp tearDown
+setUp：是每一条用例执行之前，都会被调用，是unnitest框架自动调用
+tearDown：是每一条用例执行之后，都会被调用
+
+2.setUpClass tearDownClass
+setUpClass:是一个测试类中，所有用例执行之前，会被调用一次
+tearDownClass：是一个测试类中，所有用例执行之后，会被调用一次
+
+3.setUpModule tearDownModule
+setUpModule:是一个模块中(py文件)，所有用例执行之前，会被调用一次
+tearDownModule：是一个模块(py文件)，所有用例执行之后，会被调用一次
+
