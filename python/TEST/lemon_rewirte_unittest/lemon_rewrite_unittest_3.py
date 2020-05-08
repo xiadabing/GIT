@@ -21,13 +21,11 @@ class TestCase01(unittest.TestCase):
     """
 
     @data([True,False,None],("可优","柠檬小姐姐",0))
-    #如果data数据里面有列表或者元组，如果要对列表进行进一步拆包，则需要使用unpack
     @unpack   #使用anpack,那么所有的元素要能支持拆包才行，序列类型才可以拆包（list、tuple）
     def test_case(self,*val): #拆包以后会变成多个位置参数，因为val要改成*val可变参数
         print('\nRunning Test Method:{}'.format(inspect.stack()[0][3]))
         print("值为：{}\n类型为：{}\n".format(*val,type(*val)))
-        #self.assertTrue(val)
-        #self.assertTrue(*val)
+        self.assertTrue(*val)
 
 if __name__ == '__main__':
     unittest.main()

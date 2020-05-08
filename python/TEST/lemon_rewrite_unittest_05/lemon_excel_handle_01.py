@@ -1,3 +1,6 @@
+#如何来封装一些操作
+#1、明确需求（读取所有的测试用例，读取一条用例，写入结果）
+
 from openpyxl import load_workbook #可以对已存在的excel进行读写操作
 from openpyxl import workbook  #可以新建excel文件
 from collections import namedtuple

@@ -1,15 +1,6 @@
 class Animal:
-    """
-    创建动物
-    """
 
     def __init__(self, name, age, color):
-        """
-
-        :param name: 名字
-        :param age: 年龄
-        :param color: 毛色
-        """
         self.name, self.age, self.color = name, age, color
 
     def eat(self):
@@ -26,28 +17,16 @@ class Animal:
 
 
 class Dog(Animal):
-    """
-    Animal 父类，基类
-    dog 子类
-    """
-
     def bark(self):
         print('{}会汪汪叫'.format(self.name))
 
 
 class Cat(Animal):
-    """
-    定义猫类
-    """
-
     def catch(self):
         print('{}会汪汪叫'.format(self.name))
 
 
 class XiaoTianQuan(Dog):
-    """
-    定义啸天犬类
-    """
     def __init__(self,name,age,color,job):
         #这里是，丢弃父类方法，重写构造方法
         self.name, self.age, self.color, self.job = name, age, color, job
