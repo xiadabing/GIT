@@ -80,11 +80,11 @@ class HandleConfing(ConfigParser):  #继承configparser类
 
 if __name__ == '__main__':
     config = HandleConfing()
-    print(config())
-    print(config("excel"))
-    print(config("excel","two_res"))
-    print(config("excel", "two_res",is_bool=True))
-    print(config("excel", "five_res", is_eval=True))
+    # print(config())
+    # print(config("excel"))
+    # print(config("excel","two_res"))
+    # print(config("excel", "two_res",is_bool=True))
+    # print(config("excel", "five_res", is_eval=True))
     pass
 
 
